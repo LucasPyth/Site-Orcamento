@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Orçamento</title>
+</head>
+<header><h1>Gerador de orçamento!</h1></header>
+<body>
+    <section id="selecao">
+       
+        <div id="div1">
+            <p id="chamada">Digite o valor dentro do seu banco este mês: </p>
+            <input type="number" name="valor" id="valor" min="0">
+            <div id="adc"><input type="button" value="Adicionar" onclick="adicionar()" id="b1"></div>
+            <select name="qbanco" id="qbanco">
+                <option value="">Escolha o banco</option>
+                <option value="Brb" >Brb</option>
+                <option value="Nubank" >Nubank</option>
+                <option value="Banco do Brasil" >Banco do Brasil</option>
+            </select>
+        
+            <div id="passatipo">
+                <input  type="button" value="Acabaram os bancos" onclick="ircartoes()">
+            </div>
+            
+        </div>
+        <div id="gastos" >
+            <p id="chamada3">Acrescente seus gastos ou investimento ou dívida: </p>
+            <input type="number" name="valor" id="valor3" min="0" >
+            <div id="adc3"><input type="button" value="Adicionar" onclick="adicionar3()" id="b1_3"></div>
+            <select name="qbanco3" id="qbanco3">
+                <option value="">Escolha um gasto</option>
+                <option value="Plano de Sáude" >Plano de Sáude</option>
+                <option value="Internet" >Internet</option>
+                <option value="Internet Móvel" >Internet Móvel</option>
+                <option value="Empréstimo" >Empréstimo</option>
+                <option value="Luz" >Luz</option>
+                <option value="Água" >Água</option>
+                <option value="Rezerva para o mês" >Rezerva para o mês</option>
+                <option value="Investimentos" >Investimentos</option>
+
+            </select>
+        
+            <div id="passatipo">
+                <input  type="button" value="Acabaram os gastos" onclick="concluir()">
+            </div>
+            
+        </div>  
+        <div id="res">
+        </div>    
+    </section>
+   <script src = "script.js"></script>
+</body>
+</html>
